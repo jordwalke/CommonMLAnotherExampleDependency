@@ -1,0 +1,21 @@
+{
+  "name": "CommonMLAnotherExampleDependency",
+  "version": "1.0.0",
+  "description": "Utility depended on by dependency",
+  "license": "BSD",
+  "dependencies": {
+    "CommonML": "git://github.com/jordwalke/CommonML.git"
+  },
+  "CommonML": {
+    "exports": ["AnotherExampleMod"],
+    "compileFlags": ["-w","-30","-w","-40", "-bin-annot"],
+    "linkFlags": [],
+    "docFlags": [
+      "-colorize-code",
+      "-css-style",
+      "docStyle.css",
+      "-latex"
+    ]
+  }
+}
+
